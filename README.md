@@ -1,0 +1,1 @@
+This is a mock admin dashboard project as assigned from The Odin Project. This project was made to further my understanding of CSS grid.
