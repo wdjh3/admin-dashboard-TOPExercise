@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     box-sizing: border-box;
 }
 
@@ -30,8 +30,10 @@ main {
 }
 
 div.top-bar,
-div.profile-actions {
-    display: flex;
+div.profile-actions,
+div.project-action-buttons {
+    display: grid;
+    grid-auto-flow: column;
 }
 
 div.content {
