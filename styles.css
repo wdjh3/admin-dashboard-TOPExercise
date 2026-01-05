@@ -1,8 +1,56 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+ul {
+    margin: 0;
 }
 
 body {
     margin: 0;
+
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "nav main";
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+
+    display: grid;
+    grid-template-rows: 10.5rem 1fr;
+}
+
+div.top-bar,
+div.profile-actions {
+    display: flex;
+}
+
+div.content {
+    display: grid;
+
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "user-projects announcements"
+                         "user-projects trending"
+}
+
+.user-projects {
+    grid-area: user-projects;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
 }
